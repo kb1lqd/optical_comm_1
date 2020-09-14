@@ -34,6 +34,32 @@ Today I dove into the microphone amplifier circuitry. Assuming a nominal microph
 * Maximum Gain (5mVp-p): 1200 V/V   
 * Minimum Gain (1mvp-p): 240 V/V
 
-To realize this it is best split into two amplifier sub-circuits as to provide a solid fixed gain pre-amp and a variable gain final amplifier. Driving a 1200 V/V gain at 4KHz would require ~10MHz gain bandwidth product op-amp as well, easy to obtain but splitting the gain eases this burden. The AD8648 provides over 20MHz bandwidth and is relatively cheap.
+To realize this it is best split into two amplifier sub-circuits as to provide a solid fixed gain pre-amp and a variable gain final amplifier. Driving a 1200 V/V gain at 4KHz would require ~10MHz gain bandwidth product op-amp as well, easy to obtain but splitting the gain further eases this requirement. The AD8648 provides over 20MHz bandwidth and is relatively cheap.
+
+ADS8648 Key Specs
+
+* Vos = 2.5mV Maximum
+  * All gain stages are AC coupled, 2.5mV at full scale 2.4V is negligable
+* Is = 50pA Maximum worst case
+  * With a 10K gain resistor this is only 0.5mV
+  * With gain should match this on each input.
+* Voh = 4.9V at 1mA over temp
+  * Not an issue
+* Vol
+  * 40mV maximum over temp at 1mA.
+  * Not an issue.
+* GBP = 24 MHz
+* Phase Margin = 74 degrees
 
 I created a pre-amp of gain 100 V/V, the secondary gain stage is required to provide a variable 2.4V/V to 12 V/V. This is achieved by using a potentiometer in series with a minimum feedback resistor.
+
+
+### 9/13/2020
+Starting tonight off I need to work on the following:
+* Calculate op amp gains (DONE)
+  * Completed, GBP also calculated and are good.
+* Calculate filter values into the LED driver at 4KHz -3dB (DONE)
+* Choose MOSFET (DONE)
+  * PMBF170,215	from NXP looks good. I imported the model into LTSpice. Looks good, maybe a bit lower output at lower freq.
+* TO-DO: Double check op-amp stability
+* Start KICAD
