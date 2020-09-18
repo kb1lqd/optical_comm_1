@@ -63,3 +63,15 @@ Starting tonight off I need to work on the following:
   * PMBF170,215	from NXP looks good. I imported the model into LTSpice. Looks good, maybe a bit lower output at lower freq.
 * TO-DO: Double check op-amp stability
 * Start KICAD
+
+
+### 9/17/2020
+
+TO-DO:
+* Calculate:
+  * Op-amp stability
+  * Op-amp capacitive driver (AC coupling capacitance)
+* Start KiCAD (DONE)
+
+Status:
+I was able to start KiCAD and get a new library added for the AD8648 IC. I did high level sheet creation for the transmitter and the first pass drop in of components for the microphone pre-amp stage.

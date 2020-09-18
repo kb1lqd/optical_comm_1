@@ -1,0 +1,76 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 4
+Title "KB1LQD Optical Communications 1"
+Date "2020-09-17"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 1 1 5F647E2C
+P 2750 3150
+F 0 "U?" H 3350 3817 50  0000 C CNN
+F 1 "AD8648" H 3350 3726 50  0000 C CNN
+F 2 "" H 2750 3150 50  0001 C CNN
+F 3 "" H 2750 3150 50  0001 C CNN
+	1    2750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 2 1 5F64871C
+P 3900 3200
+F 0 "U?" H 4500 3867 50  0000 C CNN
+F 1 "AD8648" H 4500 3776 50  0000 C CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	2    3900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 3 1 5F64944B
+P 3450 2300
+F 0 "U?" H 4128 2701 50  0000 L CNN
+F 1 "AD8648" H 4128 2610 50  0000 L CNN
+F 2 "" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	3    3450 2300
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4800 1150 1250 450 
+U 5F64AFB2
+F0 "Michrophone Pre-Amp" 50
+F1 "mic_preamp.sch" 50
+F2 "AUDIO_INPUT" I L 4800 1450 50 
+F3 "AUDIO_OUTPUT" I R 6050 1450 50 
+F4 "VREF" I L 4800 1300 50 
+$EndSheet
+$Sheet
+S 8000 2000 1100 500 
+U 5F64B8C0
+F0 "LED Driver" 50
+F1 "led_driver.sch" 50
+F2 "AUDIO_INPUT" I L 8000 2250 50 
+F3 "LED_DRV" I R 9100 2150 50 
+F4 "LED_RTN" I R 9100 2350 50 
+$EndSheet
+$Sheet
+S 4800 1900 1250 450 
+U 5F64BA55
+F0 "Headphone_Input" 50
+F1 "headphone_input.sch" 50
+F2 "AUDIO_OUTPUT" I R 6050 2200 50 
+F3 "AUDIO_INPUT" I L 4800 2200 50 
+F4 "VREF" I L 4800 2050 50 
+$EndSheet
+$EndSCHEMATC
