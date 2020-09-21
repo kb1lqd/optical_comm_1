@@ -75,3 +75,8 @@ TO-DO:
 
 Status:
 I was able to start KiCAD and get a new library added for the AD8648 IC. I did high level sheet creation for the transmitter and the first pass drop in of components for the microphone pre-amp stage.
+
+
+### 9/20/2020
+
+* I used LTSpice to do a quick check on op-amp stability.
