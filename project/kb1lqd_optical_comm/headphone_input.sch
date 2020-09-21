@@ -127,7 +127,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 3500 6050 3500
 Wire Wire Line
-	6650 3400 6900 3400
+	6650 3400 6800 3400
 Wire Wire Line
 	5850 2650 5850 3300
 Wire Wire Line
@@ -165,12 +165,12 @@ Text Notes 5250 3800 0    50   Italic 10
 Text Notes 3150 3100 0    50   Italic 10
 NEED TO FIX GAIN FOR INPUT RANGE
 Wire Wire Line
-	6900 2650 6900 3400
+	7300 2650 7300 3400
 Wire Wire Line
-	6900 2650 6650 2650
-Connection ~ 6900 3400
+	7300 2650 6650 2650
+Connection ~ 7300 3400
 Wire Wire Line
-	6900 3400 7450 3400
+	7300 3400 7450 3400
 Text Notes 950  3050 0    50   ~ 0
 0-8Vp-p Input Range
 Text Notes 950  3150 0    50   ~ 0
@@ -277,4 +277,19 @@ Text Notes 950  3800 0    50   ~ 0
 Maximum Needed Attenuation = 0.3V/V\n
 Text Notes 950  3900 0    50   ~ 0
 Maximum Attenuation = 0.2V/V
+$Comp
+L Device:R_US R?
+U 1 1 5F6E86E4
+P 6950 3400
+AR Path="/5F64B8C0/5F6E86E4" Ref="R?"  Part="1" 
+AR Path="/5F64BA55/5F6E86E4" Ref="R?"  Part="1" 
+F 0 "R?" V 6745 3400 50  0000 C CNN
+F 1 "0" V 6836 3400 50  0000 C CNN
+F 2 "" V 6990 3390 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+	1    6950 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3400 7300 3400
 $EndSCHEMATC

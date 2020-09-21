@@ -15,9 +15,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 2050 3750 0    50   Input Italic 10
 AUDIO_INPUT
-Text HLabel 6950 2100 2    50   Input Italic 10
+Text HLabel 7350 2100 2    50   Input Italic 10
 LED_DRV
-Text HLabel 6950 2500 2    50   Input Italic 10
+Text HLabel 7350 2500 2    50   Input Italic 10
 LED_RTN
 $Comp
 L kb1lqd_optical_comm:AD8648 U?
@@ -116,23 +116,8 @@ Wire Wire Line
 	4350 3750 4350 4050
 Wire Wire Line
 	4350 3750 5250 3750
-$Comp
-L Transistor_BJT:PMBT2222AYS Q?
-U 1 1 5F6932D5
-P 6850 3650
-F 0 "Q?" H 7041 3696 50  0000 L CNN
-F 1 "PMBT2222AYS" H 7041 3605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 7050 3750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMBT2222AYS.pdf" H 6850 3650 50  0001 C CNN
-	1    6850 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 3650 6650 3650
-Wire Wire Line
-	6950 3450 6950 2900
-Wire Wire Line
-	6950 2900 5850 2900
 Wire Wire Line
 	5050 2900 5050 3550
 Wire Wire Line
@@ -150,11 +135,6 @@ F 3 "~" H 5700 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2900 5050 2900
-Text Notes 7050 3400 0    50   Italic 10
-UPDATED TO PMBF170 NMOS
-Wire Wire Line
-	6950 2900 6950 2500
-Connection ~ 6950 2900
 Wire Wire Line
 	6950 2100 6950 1550
 $Comp
@@ -180,7 +160,7 @@ F 3 "~" H 6950 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 4000 6950 3850
+	6950 4000 6950 3950
 Wire Wire Line
 	6950 4300 6950 4450
 $Comp
@@ -194,9 +174,9 @@ F 3 "" H 4350 4450 50  0001 C CNN
 	1    4350 4450
 	1    0    0    -1  
 $EndComp
-Text Notes 7350 2350 0    50   Italic 10
+Text Notes 7350 2350 0    50   ~ 0
 LED DRIVE OUTPUT
-Text Notes 4400 3400 0    50   Italic 10
+Text Notes 4500 3700 0    50   ~ 0
 1.2V Reference
 Text Notes 2700 3450 0    50   Italic 10
 fc(3dB)= x
@@ -213,4 +193,34 @@ F 3 "~" H 2900 4000 50  0001 C CNN
 	1    2900 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L kb1lqd_optical_comm:PMBF170 Q?
+U 1 1 5F6ED2B2
+P 6450 4100
+F 0 "Q?" H 7055 4596 50  0000 L CNN
+F 1 "PMBF170" H 7055 4505 50  0000 L CNN
+F 2 "" H 6450 4100 50  0001 C CNN
+F 3 "" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+Text Notes 7600 3800 0    50   ~ 0
+Id(max)=300mA\nPd(Max)=830mW\nRds(on)=5 Ohms\nRth(j-a)= 350 K/W
+Text Notes 7600 4250 0    50   ~ 0
+Current Limit / Sense Resistor\nI(max) = 18mA
+Wire Wire Line
+	6950 2500 6950 3450
+Wire Wire Line
+	7450 2900 7450 3950
+Wire Wire Line
+	7450 3950 6950 3950
+Wire Wire Line
+	5850 2900 7450 2900
+Connection ~ 6950 3950
+Wire Wire Line
+	6950 3950 6950 3850
+Wire Wire Line
+	6950 2100 7350 2100
+Wire Wire Line
+	6950 2500 7350 2500
 $EndSCHEMATC
