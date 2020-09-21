@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -13,12 +13,268 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6450 3600 2    50   Input ~ 0
+Text HLabel 7450 3400 2    50   Input ~ 0
 AUDIO_OUTPUT
-Text HLabel 2650 3300 0    50   Input ~ 0
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 1 1 5F6A682E
+P 5700 3000
+F 0 "U?" H 6350 3033 50  0000 C CNN
+F 1 "AD8648" H 6350 3124 50  0000 C CNN
+F 2 "" H 5700 3000 50  0001 C CNN
+F 3 "" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 3 1 5F6A6CAB
+P 2550 6500
+F 0 "U?" H 3228 6901 50  0000 L CNN
+F 1 "AD8648" H 3228 6810 50  0000 L CNN
+F 2 "" H 2550 6500 50  0001 C CNN
+F 3 "" H 2550 6500 50  0001 C CNN
+	3    2550 6500
+	1    0    0    -1  
+$EndComp
+Text HLabel 2850 3500 0    50   Input Italic 10
 AUDIO_INPUT
-Text HLabel 3900 2500 1    50   Input ~ 0
-VREF
-Text Notes 3550 2200 0    50   Italic 10
-THIS CAN JUST BE VCC? VIRTUAL GND?
+$Comp
+L Device:R_US R?
+U 1 1 5F6AD538
+P 3700 3750
+AR Path="/5F64B8C0/5F6AD538" Ref="R?"  Part="1" 
+AR Path="/5F64BA55/5F6AD538" Ref="R?"  Part="1" 
+F 0 "R?" H 3768 3796 50  0000 L CNN
+F 1 "10k" H 3768 3705 50  0000 L CNN
+F 2 "" V 3740 3740 50  0001 C CNN
+F 3 "~" H 3700 3750 50  0001 C CNN
+	1    3700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F6AD53E
+P 5150 2700
+AR Path="/5F64B8C0/5F6AD53E" Ref="R?"  Part="1" 
+AR Path="/5F64BA55/5F6AD53E" Ref="R?"  Part="1" 
+F 0 "R?" H 5218 2746 50  0000 L CNN
+F 1 "3.2k" H 5218 2655 50  0000 L CNN
+F 2 "" V 5190 2690 50  0001 C CNN
+F 3 "~" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3500 2850 3500
+Wire Wire Line
+	3450 3500 3500 3500
+Wire Wire Line
+	3700 3500 3700 3600
+Wire Wire Line
+	3700 3900 3700 4200
+Wire Wire Line
+	5150 2850 5150 3500
+Wire Wire Line
+	5150 4100 5150 4200
+Wire Wire Line
+	5150 2550 5150 2400
+$Comp
+L Device:R_US R?
+U 1 1 5F6AD54B
+P 5150 3950
+AR Path="/5F64B8C0/5F6AD54B" Ref="R?"  Part="1" 
+AR Path="/5F64BA55/5F6AD54B" Ref="R?"  Part="1" 
+F 0 "R?" H 5218 3996 50  0000 L CNN
+F 1 "1k" H 5218 3905 50  0000 L CNN
+F 2 "" V 5190 3940 50  0001 C CNN
+F 3 "~" H 5150 3950 50  0001 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6AD551
+P 3700 4200
+AR Path="/5F64B8C0/5F6AD551" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6AD551" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3705 4027 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F6AD557
+P 5150 2400
+AR Path="/5F64B8C0/5F6AD557" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6AD557" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 2250 50  0001 C CNN
+F 1 "+5V" H 5165 2573 50  0000 C CNN
+F 2 "" H 5150 2400 50  0001 C CNN
+F 3 "" H 5150 2400 50  0001 C CNN
+	1    5150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3500 4300 3500
+Connection ~ 3700 3500
+Connection ~ 5150 3500
+Wire Wire Line
+	5150 3500 5150 3800
+Wire Wire Line
+	5150 3500 6050 3500
+Wire Wire Line
+	6650 3400 6900 3400
+Wire Wire Line
+	5850 2650 5850 3300
+Wire Wire Line
+	5850 3300 6050 3300
+$Comp
+L Device:R_US R?
+U 1 1 5F6AD566
+P 6500 2650
+AR Path="/5F64B8C0/5F6AD566" Ref="R?"  Part="1" 
+AR Path="/5F64BA55/5F6AD566" Ref="R?"  Part="1" 
+F 0 "R?" V 6295 2650 50  0000 C CNN
+F 1 "3.2k" V 6386 2650 50  0000 C CNN
+F 2 "" V 6540 2640 50  0001 C CNN
+F 3 "~" H 6500 2650 50  0001 C CNN
+	1    6500 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2650 5850 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5F6AD56D
+P 5150 4200
+AR Path="/5F64B8C0/5F6AD56D" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6AD56D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 3950 50  0001 C CNN
+F 1 "GND" H 5155 4027 50  0000 C CNN
+F 2 "" H 5150 4200 50  0001 C CNN
+F 3 "" H 5150 4200 50  0001 C CNN
+	1    5150 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 5250 3800 0    50   Italic 10
+1.2V Reference
+Text Notes 3150 3100 0    50   Italic 10
+NEED TO FIX GAIN FOR INPUT RANGE
+Wire Wire Line
+	6900 2650 6900 3400
+Wire Wire Line
+	6900 2650 6650 2650
+Connection ~ 6900 3400
+Wire Wire Line
+	6900 3400 7450 3400
+Text Notes 950  3050 0    50   ~ 0
+0-8Vp-p Input Range
+Text Notes 950  3150 0    50   ~ 0
+Assumed input is able to adjust audio input level.
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5F6BCCAE
+P 3300 3500
+AR Path="/5F64AFB2/5F6BCCAE" Ref="RV?"  Part="1" 
+AR Path="/5F64BA55/5F6BCCAE" Ref="RV?"  Part="1" 
+F 0 "RV?" V 3095 3500 50  0000 C CNN
+F 1 "50k" V 3186 3500 50  0000 C CNN
+F 2 "" H 3300 3500 50  0001 C CNN
+F 3 "~" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3650 3300 3750
+Wire Wire Line
+	3300 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 3700 3500
+$Comp
+L Device:C C?
+U 1 1 5F6CB199
+P 2450 6250
+AR Path="/5F64AFB2/5F6CB199" Ref="C?"  Part="1" 
+AR Path="/5F64BA55/5F6CB199" Ref="C?"  Part="1" 
+F 0 "C?" H 2335 6204 50  0000 R CNN
+F 1 "1u" H 2335 6295 50  0000 R CNN
+F 2 "" H 2488 6100 50  0001 C CNN
+F 3 "~" H 2450 6250 50  0001 C CNN
+	1    2450 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CB19F
+P 2800 6500
+AR Path="/5F64AFB2/5F6CB19F" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6CB19F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2800 6250 50  0001 C CNN
+F 1 "GND" H 2805 6327 50  0000 C CNN
+F 2 "" H 2800 6500 50  0001 C CNN
+F 3 "" H 2800 6500 50  0001 C CNN
+	1    2800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F6CB1A5
+P 2450 5900
+AR Path="/5F64AFB2/5F6CB1A5" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6CB1A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 5750 50  0001 C CNN
+F 1 "+5V" H 2465 6073 50  0000 C CNN
+F 2 "" H 2450 5900 50  0001 C CNN
+F 3 "" H 2450 5900 50  0001 C CNN
+	1    2450 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6200 2800 6200
+Wire Wire Line
+	2800 6200 2800 6500
+Wire Wire Line
+	2450 6100 2900 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CB1AE
+P 2450 6500
+AR Path="/5F64AFB2/5F6CB1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5F64BA55/5F6CB1AE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 6250 50  0001 C CNN
+F 1 "GND" H 2455 6327 50  0000 C CNN
+F 2 "" H 2450 6500 50  0001 C CNN
+F 3 "" H 2450 6500 50  0001 C CNN
+	1    2450 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6500 2450 6400
+Wire Wire Line
+	2450 5900 2450 6100
+Connection ~ 2450 6100
+$Comp
+L Device:C C?
+U 1 1 5F6CE36E
+P 4450 3500
+F 0 "C?" V 4198 3500 50  0000 C CNN
+F 1 "1u" V 4289 3500 50  0000 C CNN
+F 2 "" H 4488 3350 50  0001 C CNN
+F 3 "~" H 4450 3500 50  0001 C CNN
+	1    4450 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3500 5150 3500
+Text Notes 950  3800 0    50   ~ 0
+Maximum Needed Attenuation = 0.3V/V\n
+Text Notes 950  3900 0    50   ~ 0
+Maximum Attenuation = 0.2V/V
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -13,10 +13,204 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1800 2400 0    50   Input Italic 10
+Text HLabel 2050 3750 0    50   Input Italic 10
 AUDIO_INPUT
-Text HLabel 7050 2350 0    50   Input Italic 10
+Text HLabel 6950 2100 2    50   Input Italic 10
 LED_DRV
-Text HLabel 7050 2650 0    50   Input Italic 10
+Text HLabel 6950 2500 2    50   Input Italic 10
 LED_RTN
+$Comp
+L kb1lqd_optical_comm:AD8648 U?
+U 2 1 5F682513
+P 4900 3250
+F 0 "U?" H 5550 3283 50  0000 C CNN
+F 1 "AD8648" H 5550 3374 50  0000 C CNN
+F 2 "" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	2    4900 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F6830F5
+P 2500 3750
+F 0 "R?" V 2295 3750 50  0000 C CNN
+F 1 "10k" V 2386 3750 50  0000 C CNN
+F 2 "" V 2540 3740 50  0001 C CNN
+F 3 "~" H 2500 3750 50  0001 C CNN
+	1    2500 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F684468
+P 4350 2950
+F 0 "R?" H 4418 2996 50  0000 L CNN
+F 1 "3.2k" H 4418 2905 50  0000 L CNN
+F 2 "" V 4390 2940 50  0001 C CNN
+F 3 "~" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3750 2050 3750
+Wire Wire Line
+	2650 3750 2900 3750
+Wire Wire Line
+	2900 3750 2900 3850
+Wire Wire Line
+	2900 4150 2900 4450
+Wire Wire Line
+	4350 3100 4350 3750
+Wire Wire Line
+	4350 4350 4350 4450
+Wire Wire Line
+	4350 2800 4350 2650
+$Comp
+L Device:R_US R?
+U 1 1 5F684893
+P 4350 4200
+F 0 "R?" H 4418 4246 50  0000 L CNN
+F 1 "1k" H 4418 4155 50  0000 L CNN
+F 2 "" V 4390 4190 50  0001 C CNN
+F 3 "~" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F68C24A
+P 6950 4450
+F 0 "#PWR?" H 6950 4200 50  0001 C CNN
+F 1 "GND" H 6955 4277 50  0000 C CNN
+F 2 "" H 6950 4450 50  0001 C CNN
+F 3 "" H 6950 4450 50  0001 C CNN
+	1    6950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F68C502
+P 2900 4450
+F 0 "#PWR?" H 2900 4200 50  0001 C CNN
+F 1 "GND" H 2905 4277 50  0000 C CNN
+F 2 "" H 2900 4450 50  0001 C CNN
+F 3 "" H 2900 4450 50  0001 C CNN
+	1    2900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F68CB23
+P 4350 2650
+F 0 "#PWR?" H 4350 2500 50  0001 C CNN
+F 1 "+5V" H 4365 2823 50  0000 C CNN
+F 2 "" H 4350 2650 50  0001 C CNN
+F 3 "" H 4350 2650 50  0001 C CNN
+	1    4350 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 3750
+Connection ~ 4350 3750
+Wire Wire Line
+	4350 3750 4350 4050
+Wire Wire Line
+	4350 3750 5250 3750
+$Comp
+L Transistor_BJT:PMBT2222AYS Q?
+U 1 1 5F6932D5
+P 6850 3650
+F 0 "Q?" H 7041 3696 50  0000 L CNN
+F 1 "PMBT2222AYS" H 7041 3605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 7050 3750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMBT2222AYS.pdf" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3650 6650 3650
+Wire Wire Line
+	6950 3450 6950 2900
+Wire Wire Line
+	6950 2900 5850 2900
+Wire Wire Line
+	5050 2900 5050 3550
+Wire Wire Line
+	5050 3550 5250 3550
+$Comp
+L Device:R_US R?
+U 1 1 5F6951A2
+P 5700 2900
+F 0 "R?" V 5495 2900 50  0000 C CNN
+F 1 "3.2k" V 5586 2900 50  0000 C CNN
+F 2 "" V 5740 2890 50  0001 C CNN
+F 3 "~" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2900 5050 2900
+Text Notes 7050 3400 0    50   Italic 10
+UPDATED TO PMBF170 NMOS
+Wire Wire Line
+	6950 2900 6950 2500
+Connection ~ 6950 2900
+Wire Wire Line
+	6950 2100 6950 1550
+$Comp
+L power:+5V #PWR?
+U 1 1 5F69BF76
+P 6950 1550
+F 0 "#PWR?" H 6950 1400 50  0001 C CNN
+F 1 "+5V" H 6965 1723 50  0000 C CNN
+F 2 "" H 6950 1550 50  0001 C CNN
+F 3 "" H 6950 1550 50  0001 C CNN
+	1    6950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F69D7D6
+P 6950 4150
+F 0 "R?" H 7018 4196 50  0000 L CNN
+F 1 "140" H 7018 4105 50  0000 L CNN
+F 2 "" V 6990 4140 50  0001 C CNN
+F 3 "~" H 6950 4150 50  0001 C CNN
+	1    6950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4000 6950 3850
+Wire Wire Line
+	6950 4300 6950 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A2946
+P 4350 4450
+F 0 "#PWR?" H 4350 4200 50  0001 C CNN
+F 1 "GND" H 4355 4277 50  0000 C CNN
+F 2 "" H 4350 4450 50  0001 C CNN
+F 3 "" H 4350 4450 50  0001 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 7350 2350 0    50   Italic 10
+LED DRIVE OUTPUT
+Text Notes 4400 3400 0    50   Italic 10
+1.2V Reference
+Text Notes 2700 3450 0    50   Italic 10
+fc(3dB)= x
+Wire Wire Line
+	2900 3750 4350 3750
+$Comp
+L Device:C C?
+U 1 1 5F6D0D8B
+P 2900 4000
+F 0 "C?" H 3015 4046 50  0000 L CNN
+F 1 "3.9n" H 3015 3955 50  0000 L CNN
+F 2 "" H 2938 3850 50  0001 C CNN
+F 3 "~" H 2900 4000 50  0001 C CNN
+	1    2900 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
