@@ -162,8 +162,6 @@ F 3 "" H 5150 4200 50  0001 C CNN
 $EndComp
 Text Notes 5250 3800 0    50   Italic 10
 1.2V Reference
-Text Notes 3150 3100 0    50   Italic 10
-NEED TO FIX GAIN FOR INPUT RANGE
 Wire Wire Line
 	7300 2650 7300 3400
 Wire Wire Line
