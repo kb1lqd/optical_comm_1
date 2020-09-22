@@ -81,3 +81,9 @@ I was able to start KiCAD and get a new library added for the AD8648 IC. I did h
 
 * I used LTSpice to do a quick check on op-amp stability.
 * I changed the single-supply op-amp design to a voltage divider between 5V input.
+
+
+### 9/21/2020
+
+* I created an open items list on google drive
+* I added audio jack with pin-outs for a kenwood style mic connector

@@ -124,11 +124,11 @@ F 3 "~" H 3000 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C 1u
+L Device:C C?
 U 1 1 5F660E6D
 P 5800 3800
-F 0 "1u" V 5548 3800 50  0000 C CNN
-F 1 "C" V 5639 3800 50  0000 C CNN
+F 0 "C?" V 5548 3800 50  0000 C CNN
+F 1 "1u" V 5639 3800 50  0000 C CNN
 F 2 "" H 5838 3650 50  0001 C CNN
 F 3 "~" H 5800 3800 50  0001 C CNN
 	1    5800 3800
@@ -357,4 +357,27 @@ Text Notes 4500 4450 0    50   ~ 0
 GBP = 240KHz
 Text Notes 7150 4500 0    50   ~ 0
 GBP = 2.0 MHz
+$Comp
+L Device:C C?
+U 1 1 5F708452
+P 4850 2600
+F 0 "C?" V 4598 2600 50  0000 C CNN
+F 1 "DNP" V 4689 2600 50  0000 C CNN
+F 2 "" H 4888 2450 50  0001 C CNN
+F 3 "~" H 4850 2600 50  0001 C CNN
+	1    4850 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2600 4300 2600
+Wire Wire Line
+	4300 2600 4300 3150
+Connection ~ 4300 3150
+Wire Wire Line
+	5000 2600 5250 2600
+Wire Wire Line
+	5250 2600 5250 3150
+Connection ~ 5250 3150
+Text Notes 4550 2800 0    50   ~ 0
+Optional LPF
 $EndSCHEMATC

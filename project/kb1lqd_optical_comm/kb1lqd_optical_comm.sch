@@ -23,13 +23,12 @@ F3 "LED_DRV" I R 7000 2700 50
 F4 "LED_RTN" I R 7000 2900 50 
 $EndSheet
 $Sheet
-S 2700 2900 1250 450 
+S 3000 3800 1250 450 
 U 5F64BA55
 F0 "Headphone_Input" 50
 F1 "headphone_input.sch" 50
-F2 "AUDIO_OUTPUT" I R 3950 3200 50 
-F3 "AUDIO_INPUT" I L 2700 3200 50 
-F4 "VREF" I L 2700 3050 50 
+F2 "AUDIO_OUTPUT" I R 4250 4100 50 
+F3 "AUDIO_INPUT" I L 3000 4100 50 
 $EndSheet
 $Comp
 L Switch:SW_SPDT SW?
@@ -47,24 +46,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 2700 4750 2700
 Wire Wire Line
-	3950 3200 4500 3200
-Wire Wire Line
-	4500 3200 4500 2900
-Wire Wire Line
 	4500 2900 4750 2900
-$Sheet
-S 2700 2100 1250 450 
-U 5F64AFB2
-F0 "Michrophone Pre-Amp" 50
-F1 "mic_preamp.sch" 50
-F2 "AUDIO_INPUT" I L 2700 2400 50 
-F3 "AUDIO_OUTPUT" I R 3950 2400 50 
-F4 "VREF" I L 2700 2250 50 
-$EndSheet
-Wire Wire Line
-	3950 2400 4500 2400
-Wire Wire Line
-	4500 2400 4500 2700
 $Comp
 L Device:LED D?
 U 1 1 5F681831
@@ -75,17 +57,6 @@ F 2 "" H 9000 2800 50  0001 C CNN
 F 3 "~" H 9000 2800 50  0001 C CNN
 	1    9000 2800
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_DPST SW?
-U 1 1 5F6F78B1
-P 8250 2800
-F 0 "SW?" H 8250 3125 50  0000 C CNN
-F 1 "SW_DPST" H 8250 3034 50  0000 C CNN
-F 2 "" H 8250 2800 50  0001 C CNN
-F 3 "~" H 8250 2800 50  0001 C CNN
-	1    8250 2800
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7000 2700 7000 2900
@@ -99,8 +70,6 @@ Wire Wire Line
 	8650 2550 9000 2550
 Wire Wire Line
 	9000 2550 9000 2650
-Wire Wire Line
-	8450 2900 8650 2900
 Wire Wire Line
 	8650 2900 8650 3050
 Wire Wire Line
@@ -124,8 +93,6 @@ Wire Wire Line
 	7900 3600 8650 3600
 Connection ~ 7900 2900
 Wire Wire Line
-	7900 2900 8050 2900
-Wire Wire Line
 	7000 2700 8000 2700
 Wire Wire Line
 	8000 2700 8000 3500
@@ -134,4 +101,171 @@ Wire Wire Line
 Connection ~ 8000 2700
 Wire Wire Line
 	8000 2700 8050 2700
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F7017A9
+P 8250 2700
+F 0 "SW?" H 8250 2935 50  0000 C CNN
+F 1 "SW_SPST" H 8250 2844 50  0000 C CNN
+F 2 "" H 8250 2700 50  0001 C CNN
+F 3 "~" H 8250 2700 50  0001 C CNN
+	1    8250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2900 8650 2900
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5F703069
+P 1850 1200
+F 0 "J?" H 1832 1525 50  0000 C CNN
+F 1 "AudioJack3" H 1832 1434 50  0000 C CNN
+F 2 "" H 1850 1200 50  0001 C CNN
+F 3 "~" H 1850 1200 50  0001 C CNN
+	1    1850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5F7034B8
+P 1850 2650
+F 0 "J?" H 1832 2975 50  0000 C CNN
+F 1 "AudioJack3" H 1832 2884 50  0000 C CNN
+F 2 "" H 1850 2650 50  0001 C CNN
+F 3 "~" H 1850 2650 50  0001 C CNN
+	1    1850 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 550  1400 0    50   ~ 0
+1/8" Connector\nTip = V+\nRing =  Mic+\nShield = Mic-
+Text Notes 550  2850 0    50   ~ 0
+Micro Connector\nTip = Speaker+\nRing =  Unused\nShield = GND (Speaker-)
+$Sheet
+S 3000 1050 1250 300 
+U 5F64AFB2
+F0 "Michrophone Pre-Amp" 50
+F1 "mic_preamp.sch" 50
+F2 "AUDIO_INPUT" I L 3000 1200 50 
+F3 "AUDIO_OUTPUT" I R 4250 1200 50 
+$EndSheet
+Wire Wire Line
+	4250 1200 4500 1200
+Wire Wire Line
+	4500 1200 4500 2700
+Wire Wire Line
+	2050 1200 3000 1200
+Wire Wire Line
+	2050 1100 2200 1100
+$Comp
+L power:+5V #PWR?
+U 1 1 5F70F9DF
+P 2700 2000
+F 0 "#PWR?" H 2700 1850 50  0001 C CNN
+F 1 "+5V" H 2715 2173 50  0000 C CNN
+F 2 "" H 2700 2000 50  0001 C CNN
+F 3 "" H 2700 2000 50  0001 C CNN
+	1    2700 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F70FC64
+P 2200 2000
+F 0 "#PWR?" H 2200 1750 50  0001 C CNN
+F 1 "GND" H 2205 1827 50  0000 C CNN
+F 2 "" H 2200 2000 50  0001 C CNN
+F 3 "" H 2200 2000 50  0001 C CNN
+	1    2200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F710CBE
+P 2200 1750
+F 0 "R?" H 2268 1796 50  0000 L CNN
+F 1 "0" H 2268 1705 50  0000 L CNN
+F 2 "" V 2240 1740 50  0001 C CNN
+F 3 "~" H 2200 1750 50  0001 C CNN
+	1    2200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1900 2200 2000
+Wire Wire Line
+	2050 1300 2700 1300
+$Comp
+L Device:R_US R?
+U 1 1 5F719386
+P 2700 1750
+F 0 "R?" H 2768 1796 50  0000 L CNN
+F 1 "10k" H 2768 1705 50  0000 L CNN
+F 2 "" V 2740 1740 50  0001 C CNN
+F 3 "~" H 2700 1750 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1900 2700 2000
+Wire Wire Line
+	2200 1100 2200 1600
+Wire Wire Line
+	2700 1300 2700 1600
+Text Notes 2950 1850 0    50   ~ 0
+Electrect Bias\nMay need tuning\nSet for 500uA @ 5V
+Text Notes 650  3050 0    50   Italic 10
+NEEDS UPDATE TO CORRECT PN
+Wire Wire Line
+	4500 2900 4500 4100
+Wire Wire Line
+	2050 2550 2450 2550
+Wire Wire Line
+	2050 2750 2250 2750
+Wire Wire Line
+	2250 2750 2250 2900
+Wire Wire Line
+	4500 4100 4250 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5F72B911
+P 2250 2900
+F 0 "#PWR?" H 2250 2650 50  0001 C CNN
+F 1 "GND" H 2255 2727 50  0000 C CNN
+F 2 "" H 2250 2900 50  0001 C CNN
+F 3 "" H 2250 2900 50  0001 C CNN
+	1    2250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F72BADE
+P 2600 2550
+F 0 "R?" V 2395 2550 50  0000 C CNN
+F 1 "0" V 2486 2550 50  0000 C CNN
+F 2 "" V 2640 2540 50  0001 C CNN
+F 3 "~" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	8500 2350 8500 3150
+Wire Notes Line
+	8500 3150 9350 3150
+Wire Notes Line
+	9350 3150 9350 2350
+Wire Notes Line
+	9350 2350 8500 2350
+Text Notes 8600 2300 0    50   Italic 10
+ON-BOARD LED
+Text Notes 8600 3350 0    50   Italic 10
+EXTERNAL LED
+Wire Notes Line
+	8500 3400 9650 3400
+Wire Notes Line
+	9650 3400 9650 3750
+Wire Notes Line
+	9650 3750 8500 3750
+Wire Notes Line
+	8500 3750 8500 3400
+Text Notes 8600 3900 0    50   Italic 10
+NEEDS UPDATE TO CORRECT PN
 $EndSCHEMATC
