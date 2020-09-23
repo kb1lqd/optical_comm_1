@@ -114,32 +114,10 @@ F 3 "~" H 8250 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 2900 8650 2900
-$Comp
-L Connector:AudioJack3 J?
-U 1 1 5F703069
-P 1850 1200
-F 0 "J?" H 1832 1525 50  0000 C CNN
-F 1 "AudioJack3" H 1832 1434 50  0000 C CNN
-F 2 "" H 1850 1200 50  0001 C CNN
-F 3 "~" H 1850 1200 50  0001 C CNN
-	1    1850 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J?
-U 1 1 5F7034B8
-P 1850 2650
-F 0 "J?" H 1832 2975 50  0000 C CNN
-F 1 "AudioJack3" H 1832 2884 50  0000 C CNN
-F 2 "" H 1850 2650 50  0001 C CNN
-F 3 "~" H 1850 2650 50  0001 C CNN
-	1    1850 2650
-	1    0    0    -1  
-$EndComp
 Text Notes 550  1400 0    50   ~ 0
-1/8" Connector\nTip = V+\nRing =  Mic+\nShield = Mic-
+3.5mm Connector\nTip = V+\nRing =  Mic+\nShield = Mic-\nSJ1-3523N	
 Text Notes 550  2850 0    50   ~ 0
-Micro Connector\nTip = Speaker+\nRing =  Unused\nShield = GND (Speaker-)
+2.5mm Connector\nTip = Speaker+\nRing =  Unused\nShield = GND (Speaker-)\nSJ1-2503A
 $Sheet
 S 3000 1050 1250 300 
 U 5F64AFB2
@@ -212,8 +190,6 @@ Wire Wire Line
 	2700 1300 2700 1600
 Text Notes 2950 1850 0    50   ~ 0
 Electrect Bias\nMay need tuning\nSet for 500uA @ 5V
-Text Notes 600  3250 0    50   Italic 10
-NEEDS UPDATE TO CORRECT PN\n3.5mm audio jack\n2.5mm audio jack
 Wire Wire Line
 	4500 2900 4500 4100
 Wire Wire Line
@@ -268,4 +244,26 @@ Wire Notes Line
 	8500 3750 8500 3400
 Text Notes 8600 3900 0    50   Italic 10
 NEEDS UPDATE TO CORRECT PN
+$Comp
+L kb1lqd_optical_comm:SJ-2509N J?
+U 1 1 5F7411F5
+P 1550 2900
+F 0 "J?" H 1832 3517 50  0000 C CNN
+F 1 "SJ-2509N" H 1832 3426 50  0000 C CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:SJ1-3523N J?
+U 1 1 5F7419AA
+P 1550 1450
+F 0 "J?" H 1832 2067 50  0000 C CNN
+F 1 "SJ1-3523N" H 1832 1976 50  0000 C CNN
+F 2 "" H 1550 1450 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

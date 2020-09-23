@@ -212,8 +212,8 @@ Wire Wire Line
 	2700 1300 2700 1600
 Text Notes 2950 1850 0    50   ~ 0
 Electrect Bias\nMay need tuning\nSet for 500uA @ 5V
-Text Notes 650  3050 0    50   Italic 10
-NEEDS UPDATE TO CORRECT PN
+Text Notes 600  3250 0    50   Italic 10
+NEEDS UPDATE TO CORRECT PN\n3.5mm audio jack\n2.5mm audio jack
 Wire Wire Line
 	4500 2900 4500 4100
 Wire Wire Line
