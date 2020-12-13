@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "KB1LQD Optical Communications 1"
 Date "2020-09-17"
 Rev "1"
@@ -30,17 +30,6 @@ F1 "headphone_input.sch" 50
 F2 "AUDIO_OUTPUT" I R 4250 4100 50 
 F3 "AUDIO_INPUT" I L 3000 4100 50 
 $EndSheet
-$Comp
-L Switch:SW_SPDT SW?
-U 1 1 5F6B579A
-P 4950 2800
-F 0 "SW?" H 4950 3085 50  0000 C CNN
-F 1 "SW_SPDT" H 4950 2994 50  0000 C CNN
-F 2 "" H 4950 2800 50  0001 C CNN
-F 3 "~" H 4950 2800 50  0001 C CNN
-	1    4950 2800
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 2800 5900 2800
 Wire Wire Line
@@ -63,10 +52,6 @@ Wire Wire Line
 Wire Wire Line
 	7000 2900 7900 2900
 Wire Wire Line
-	8450 2700 8650 2700
-Wire Wire Line
-	8650 2700 8650 2550
-Wire Wire Line
 	8650 2550 9000 2550
 Wire Wire Line
 	9000 2550 9000 2650
@@ -87,20 +72,6 @@ Wire Wire Line
 	8000 2700 8000 3500
 Wire Wire Line
 	8000 3500 8650 3500
-Connection ~ 8000 2700
-Wire Wire Line
-	8000 2700 8050 2700
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5F7017A9
-P 8250 2700
-F 0 "SW?" H 8250 2935 50  0000 C CNN
-F 1 "SW_SPST" H 8250 2844 50  0000 C CNN
-F 2 "" H 8250 2700 50  0001 C CNN
-F 3 "~" H 8250 2700 50  0001 C CNN
-	1    8250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 2900 8650 2900
 Text Notes 550  1400 0    50   ~ 0
@@ -266,4 +237,84 @@ F 3 "" H 8400 3650 50  0001 C CNN
 	1    8400 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L kb1lqd_optical_comm:100SP1T2B4M6RE SW?
+U 1 1 5F757657
+P 5400 2950
+F 0 "SW?" H 5850 3425 50  0000 C CNN
+F 1 "100SP1T2B4M6RE" H 5850 3334 50  0000 C CNN
+F 2 "" H 5400 2950 50  0001 C CNN
+F 3 "" H 5400 2950 50  0001 C CNN
+	1    5400 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2550 8000 2550
+Wire Wire Line
+	8000 2550 8000 2700
+Connection ~ 8000 2700
+Wire Wire Line
+	8500 2650 8650 2650
+Wire Wire Line
+	8650 2650 8650 2550
+$Comp
+L kb1lqd_optical_comm:100SP1T2B4M6RE SW?
+U 1 1 5F759014
+P 8750 2800
+F 0 "SW?" H 9650 3300 50  0000 C CNN
+F 1 "100SP1T2B4M6RE" H 9400 3200 50  0000 C CNN
+F 2 "" H 8750 2800 50  0001 C CNN
+F 3 "" H 8750 2800 50  0001 C CNN
+	1    8750 2800
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 3000 4950 1350 850 
+U 5FD58FC7
+F0 "Photodiode Transimpedance Amplifier" 50
+F1 "file5FD58FC6.sch" 50
+F2 "OUTPUT" I R 4350 5350 50 
+$EndSheet
+$Comp
+L kb1lqd_optical_comm:100SP1T2B4M6RE SW?
+U 1 1 5FD7D7DF
+P 5850 5600
+F 0 "SW?" H 6750 6100 50  0000 C CNN
+F 1 "100SP1T2B4M6RE" H 6500 6000 50  0000 C CNN
+F 2 "" H 5850 5600 50  0001 C CNN
+F 3 "" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:0022052021 J?
+U 1 1 5FD833A5
+P 4450 6750
+F 0 "J?" H 5168 6900 50  0000 L CNN
+F 1 "0022052021" H 5168 6809 50  0000 L CNN
+F 2 "" H 4450 6750 50  0001 C CNN
+F 3 "" H 4450 6750 50  0001 C CNN
+	1    4450 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5350 5200 5350
+Wire Wire Line
+	5200 5550 4750 5550
+Wire Wire Line
+	4750 5550 4750 6600
+Wire Wire Line
+	4750 6600 4200 6600
+Text Notes 3100 7050 0    50   Italic 10
+NEEDS UPDATE TO CORRECT PN
+Wire Notes Line
+	3050 6400 4350 6400
+Wire Notes Line
+	4350 6400 4350 6900
+Wire Notes Line
+	4350 6900 3050 6900
+Wire Notes Line
+	3050 6900 3050 6400
+Text Notes 3100 6350 0    50   Italic 10
+External Photodiode (Amplified)
 $EndSCHEMATC

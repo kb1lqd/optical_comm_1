@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "KB1LQD Optical Communications 1"
 Date "2020-09-17"
 Rev "1"
@@ -267,5 +267,110 @@ F 2 "" H 8750 2800 50  0001 C CNN
 F 3 "" H 8750 2800 50  0001 C CNN
 	1    8750 2800
 	-1   0    0    -1  
+$EndComp
+$Sheet
+S 3000 4950 1350 850 
+U 5FD58FC7
+F0 "Photodiode Transimpedance Amplifier" 50
+F1 "file5FD58FC6.sch" 50
+F2 "OUTPUT" I R 4350 5350 50 
+$EndSheet
+$Comp
+L kb1lqd_optical_comm:100SP1T2B4M6RE SW?
+U 1 1 5FD7D7DF
+P 5850 5600
+F 0 "SW?" H 6750 6100 50  0000 C CNN
+F 1 "100SP1T2B4M6RE" H 6500 6000 50  0000 C CNN
+F 2 "" H 5850 5600 50  0001 C CNN
+F 3 "" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:0022052021 J?
+U 1 1 5FD833A5
+P 4450 6750
+F 0 "J?" H 5168 6900 50  0000 L CNN
+F 1 "0022052021" H 5168 6809 50  0000 L CNN
+F 2 "" H 4450 6750 50  0001 C CNN
+F 3 "" H 4450 6750 50  0001 C CNN
+	1    4450 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5350 5200 5350
+Wire Wire Line
+	5200 5550 4750 5550
+Wire Wire Line
+	4750 5550 4750 6600
+Wire Wire Line
+	4750 6600 4200 6600
+Text Notes 3100 7050 0    50   Italic 10
+NEEDS UPDATE TO CORRECT PN
+Wire Notes Line
+	3050 6400 4350 6400
+Wire Notes Line
+	4350 6400 4350 6900
+Wire Notes Line
+	4350 6900 3050 6900
+Wire Notes Line
+	3050 6900 3050 6400
+Text Notes 3100 6350 0    50   Italic 10
+External Photodiode (Amplified)
+$Comp
+L kb1lqd_optical_comm:SJ1-3523N J?
+U 1 1 5FD93BCB
+P 1550 4350
+F 0 "J?" H 1832 4967 50  0000 C CNN
+F 1 "SJ1-3523N" H 1832 4876 50  0000 C CNN
+F 2 "" H 1550 4350 50  0001 C CNN
+F 3 "" H 1550 4350 50  0001 C CNN
+	1    1550 4350
+	1    0    0    -1  
+$EndComp
+Text Notes 600  4400 0    50   ~ 0
+3.5mm Connector\nTip = AUDIO_P\nRing =  OPEN\nShield = AUDIO_N\nSJ1-3523N	
+$Comp
+L Device:R_US R?
+U 1 1 5FD94DA4
+P 2500 4600
+F 0 "R?" H 2568 4646 50  0000 L CNN
+F 1 "0" H 2568 4555 50  0000 L CNN
+F 2 "" V 2540 4590 50  0001 C CNN
+F 3 "~" H 2500 4600 50  0001 C CNN
+	1    2500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4100 3000 4100
+Wire Wire Line
+	2050 4000 2500 4000
+Wire Wire Line
+	2500 4000 2500 4450
+Wire Wire Line
+	2050 4200 2250 4200
+Wire Wire Line
+	2250 4200 2250 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FD984FE
+P 2250 4750
+F 0 "#PWR?" H 2250 4500 50  0001 C CNN
+F 1 "GND" H 2255 4577 50  0000 C CNN
+F 2 "" H 2250 4750 50  0001 C CNN
+F 3 "" H 2250 4750 50  0001 C CNN
+	1    2250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD987E2
+P 2500 4750
+F 0 "#PWR?" H 2500 4500 50  0001 C CNN
+F 1 "GND" H 2505 4577 50  0000 C CNN
+F 2 "" H 2500 4750 50  0001 C CNN
+F 3 "" H 2500 4750 50  0001 C CNN
+	1    2500 4750
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
