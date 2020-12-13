@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name kb1lqd_optical_comm)(type Legacy)(uri ${KIPRJMOD}/Library/kb1lqd_optical_comm.lib)(options "")(descr ""))
+  (lib (name TPA6111A2D)(type Legacy)(uri ${KIPRJMOD}/Library/downloaded_library_files/TPA6111A2D/TPA6111A2D.lib)(options "")(descr ""))
 )
