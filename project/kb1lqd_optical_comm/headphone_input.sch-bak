@@ -13,30 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7450 3400 2    50   Input ~ 0
+Text HLabel 7450 3400 2    50   Output ~ 0
 AUDIO_OUTPUT
-$Comp
-L kb1lqd_optical_comm:AD8648 U1
-U 1 1 5F6A682E
-P 5700 3000
-F 0 "U1" H 6350 3033 50  0000 C CNN
-F 1 "AD8648" H 6350 3124 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 3000 50  0001 C CNN
-F 3 "" H 5700 3000 50  0001 C CNN
-	1    5700 3000
-	1    0    0    1   
-$EndComp
-$Comp
-L kb1lqd_optical_comm:AD8648 U1
-U 3 1 5F6A6CAB
-P 2550 6500
-F 0 "U1" H 3228 6901 50  0000 L CNN
-F 1 "AD8648" H 3228 6810 50  0000 L CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2550 6500 50  0001 C CNN
-F 3 "" H 2550 6500 50  0001 C CNN
-	3    2550 6500
-	1    0    0    -1  
-$EndComp
 Text HLabel 2850 3500 0    50   Input Italic 10
 AUDIO_INPUT
 $Comp
@@ -346,4 +324,26 @@ F 3 "" H 4750 4200 50  0001 C CNN
 $EndComp
 Text Notes 3100 3250 0    50   ~ 0
 PTV09A-4025F-B503
+$Comp
+L kb1lqd_optical_comm:AD8646 U5
+U 3 1 5FE94ACD
+P 2550 6500
+F 0 "U5" H 3228 6901 50  0000 L CNN
+F 1 "AD8646" H 3228 6810 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2550 6500 50  0001 C CNN
+F 3 "" H 2550 6500 50  0001 C CNN
+	3    2550 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L kb1lqd_optical_comm:AD8646 U5
+U 1 1 5FE92EB3
+P 5700 3000
+F 0 "U5" H 6350 3033 50  0000 C CNN
+F 1 "AD8646" H 6350 3124 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 3000 50  0001 C CNN
+F 3 "" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

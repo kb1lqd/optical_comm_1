@@ -1,4 +1,4 @@
-update=Sun 27 Dec 2020 12:09:31 AM PST
+update=Sun 27 Dec 2020 02:47:00 PM PST
 version=1
 last_client=kicad
 [general]
@@ -203,7 +203,7 @@ Enabled=1
 [pcbnew/Layer.F.Mask]
 Enabled=1
 [pcbnew/Layer.Dwgs.User]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.Cmts.User]
 Enabled=0
 [pcbnew/Layer.Eco1.User]
@@ -221,7 +221,7 @@ Enabled=1
 [pcbnew/Layer.B.Fab]
 Enabled=1
 [pcbnew/Layer.F.Fab]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.Rescue]
 Enabled=0
 [pcbnew/Netclasses]

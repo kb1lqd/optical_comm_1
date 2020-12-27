@@ -583,4 +583,78 @@ Wire Wire Line
 	8600 4550 8600 5450
 Wire Wire Line
 	8800 4550 8600 4550
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FEF8BB0
+P 5800 1050
+F 0 "H1" V 5754 1200 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5845 1200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1050 50  0001 C CNN
+F 3 "~" H 5800 1050 50  0001 C CNN
+	1    5800 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FEFB20E
+P 5800 1250
+F 0 "H2" V 5754 1400 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5845 1400 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FEFB438
+P 5800 1450
+F 0 "H3" V 5754 1600 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5845 1600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1450 50  0001 C CNN
+F 3 "~" H 5800 1450 50  0001 C CNN
+	1    5800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FEFB6CC
+P 5800 1650
+F 0 "H4" V 5754 1800 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5845 1800 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1650 50  0001 C CNN
+F 3 "~" H 5800 1650 50  0001 C CNN
+	1    5800 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 5FEFBEA6
+P 5550 1800
+F 0 "#PWR039" H 5550 1550 50  0001 C CNN
+F 1 "GND" H 5555 1627 50  0000 C CNN
+F 2 "" H 5550 1800 50  0001 C CNN
+F 3 "" H 5550 1800 50  0001 C CNN
+	1    5550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1050 5550 1050
+Wire Wire Line
+	5550 1050 5550 1250
+Wire Wire Line
+	5700 1650 5550 1650
+Connection ~ 5550 1650
+Wire Wire Line
+	5550 1650 5550 1800
+Wire Wire Line
+	5700 1450 5550 1450
+Connection ~ 5550 1450
+Wire Wire Line
+	5550 1450 5550 1650
+Wire Wire Line
+	5700 1250 5550 1250
+Connection ~ 5550 1250
+Wire Wire Line
+	5550 1250 5550 1450
 $EndSCHEMATC

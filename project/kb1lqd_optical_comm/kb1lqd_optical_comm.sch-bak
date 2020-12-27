@@ -27,7 +27,7 @@ S 3000 3800 1250 450
 U 5F64BA55
 F0 "Headphone_Input" 50
 F1 "headphone_input.sch" 50
-F2 "AUDIO_OUTPUT" I R 4250 4100 50 
+F2 "AUDIO_OUTPUT" O R 4250 4100 50 
 F3 "AUDIO_INPUT" I L 3000 4100 50 
 $EndSheet
 Wire Wire Line
