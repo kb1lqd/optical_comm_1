@@ -577,7 +577,7 @@ U 1 1 5FEF8BB0
 P 5800 1050
 F 0 "H1" V 5754 1200 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5845 1200 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 5800 1050 50  0001 C CNN
 F 3 "~" H 5800 1050 50  0001 C CNN
 	1    5800 1050
 	0    1    1    0   
@@ -588,7 +588,7 @@ U 1 1 5FEFB20E
 P 5800 1250
 F 0 "H2" V 5754 1400 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5845 1400 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 5800 1250 50  0001 C CNN
 F 3 "~" H 5800 1250 50  0001 C CNN
 	1    5800 1250
 	0    1    1    0   
@@ -599,7 +599,7 @@ U 1 1 5FEFB438
 P 5800 1450
 F 0 "H3" V 5754 1600 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5845 1600 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 5800 1450 50  0001 C CNN
 F 3 "~" H 5800 1450 50  0001 C CNN
 	1    5800 1450
 	0    1    1    0   
@@ -610,7 +610,7 @@ U 1 1 5FEFB6CC
 P 5800 1650
 F 0 "H4" V 5754 1800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5845 1800 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5800 1650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 5800 1650 50  0001 C CNN
 F 3 "~" H 5800 1650 50  0001 C CNN
 	1    5800 1650
 	0    1    1    0   
