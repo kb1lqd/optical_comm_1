@@ -282,4 +282,6 @@ Wire Wire Line
 	6650 3900 7800 3900
 Text Notes 6700 4250 0    50   ~ 0
 WARNING: Vout contains 2.5V DC bias!
+Text Notes 5700 4950 0    118  Italic 24
+ERROR: U3 PIN ASSIGNMENTS ARE INCORRECT!
 $EndSCHEMATC
